@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> animation </title>
+    <style>
+        .container{
+            background-color: yellowgreen;
+        }
+        .box{
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            animation-name: jayesh1; /* which name are used by eq- jayesh1 */
+            animation-name: jayesh2;
+            animation-duration: 3s; /* how time and min second and hr are used by anmiation*/
+            animation-iteration-count: 3; /* how many time are animation and  eq- in*/
+            animation-fill-mode: forwards; /* which direction are stop*/
+            animation-delay: 1s; /* he is start time are used */
+            animation-direction: reverse; /* animation direction are used */
+        }
+        /* part 1 */
+        /* @keyframes jayesh1 {
+            from{
+                width: 200px;
+            } 
+            to{
+                width: 1200px;
+            }
+            
+        } */
+/* part 2 */
+        @keyframes jayesh2 {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            50%{
+                top: opx;
+                left: 250px;
+            }
+            110%{
+                top: 0px;
+                left: 250px;
+            }
+        }
+    </style>    
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is Box
+        </div>
+    </div>
+</body>
+</html>
